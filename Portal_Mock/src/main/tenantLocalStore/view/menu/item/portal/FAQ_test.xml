@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="0">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityMenu">
+        <displayName>よくある質問_test</displayName>
+        <id>90651961-e6c6-4e82-8241-55323a249a75</id>
+        <name>portal/FAQ_test</name>
+        <definitionId>f4501f67-7f23-476f-bded-008097541f76</definitionId>
+        <executeSearch>true</executeSearch>
+        <viewName>test</viewName>
+    </metaData>
+</metaDataEntry>

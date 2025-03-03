@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="2">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>法人と個人事業主を管理するテーブル
+共通属性IDで、共通属性テーブルと紐付ける</description>
+        <displayName>事業者属性</displayName>
+        <id>f0800f83-faba-4ab7-bf78-bebabce5954c</id>
+        <name>portal.business_entities</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>事業者属性ID</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>60cf2dd6-89a7-42fd-8704-66f392d1ebb1</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>businessId</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>BUSS-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>事業者名</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_2</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>02c8009c-c3f5-41cd-9884-2c683f34ca75</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>businessName</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>共通属性ID</displayName>
+            <id>5744a67a-2c35-43e3-bb9d-8af4d2904e9e</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>commonAttributesId</name>
+            <updatable>true</updatable>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>f93f83a9-c81b-4e77-aeec-9932a49b8335</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+            <versionControlType>CURRENT_BASE</versionControlType>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>2</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <version>2</version>
+        </entityStoreDefinition>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <namePropertyId>02c8009c-c3f5-41cd-9884-2c683f34ca75</namePropertyId>
+        <oidPropertyId>60cf2dd6-89a7-42fd-8704-66f392d1ebb1</oidPropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>default</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

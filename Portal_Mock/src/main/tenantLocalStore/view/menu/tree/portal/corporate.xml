@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="7">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaTreeMenu">
+        <description>ユーザータイプが法人の場合のメニュー画面</description>
+        <displayName>会員（法人）用</displayName>
+        <id>0e1c9684-fc6f-4b0d-9fef-6880fb19c4c1</id>
+        <name>portal/corporate</name>
+        <childs>
+            <menuRefId>VMI0001</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>5da1b9a9-cc3f-4bf3-89c0-5fc74e1ac256</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>b7c807f2-fbf2-4d9e-8799-97d1c9793eb5</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>5c0e1b40-68dc-49f4-aa20-629fdf14babb</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>665a7c17-36bc-4ed0-b74c-e90958d11c22</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>6827bceb-d138-432a-b381-3b4f8190e3a5</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>31271db7-928b-4bcb-8260-5aa351f53058</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>90651961-e6c6-4e82-8241-55323a249a75</menuRefId>
+        </childs>
+        <displayOrder>20</displayOrder>
+        <showMenuDisplayName>false</showMenuDisplayName>
+    </metaData>
+</metaDataEntry>

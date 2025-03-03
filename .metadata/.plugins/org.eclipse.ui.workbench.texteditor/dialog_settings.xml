@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="MetaDataRepository"/>
+			<item value="buildscript"/>
+			<item value="buildscript "/>
+			<item value="&apos;org.iplass.dev"/>
+			<item value="    id &apos;org.iplass.dev&apos; version &apos;1.0.0&apos;"/>
+			<item value="&lt;resource-ref&gt;"/>
+			<item value="DB Co"/>
+			<item value="DB"/>
+			<item value="mysql"/>
+			<item value="Tomcat admin port"/>
+			<item value="port"/>
+			<item value="po"/>
+			<item value="context"/>
+			<item value="Oracle"/>
+			<item value="OracleRdbAdapter"/>
+		</list>
+	</section>
+</section>

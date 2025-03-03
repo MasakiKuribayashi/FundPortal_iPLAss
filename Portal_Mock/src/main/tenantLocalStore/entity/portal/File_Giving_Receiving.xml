@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>ファイルを資料授受する機能</description>
+        <displayName>資料授受</displayName>
+        <id>2fb95d2e-547c-4ffe-820b-142e5597dd89</id>
+        <name>portal.File_Giving_Receiving</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>ファイル</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>acdb3c7f-482e-4f4c-8f4a-1b6a21303092</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>file</name>
+            <updatable>true</updatable>
+            <type xsi:type="binaryType"/>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>1</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <version>1</version>
+        </entityStoreDefinition>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>default</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

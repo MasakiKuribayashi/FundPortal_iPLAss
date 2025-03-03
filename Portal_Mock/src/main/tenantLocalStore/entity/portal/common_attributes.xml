@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="2">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>事業者属性と個人属性と共通する項目を管理する</description>
+        <displayName>共通属性</displayName>
+        <id>f93f83a9-c81b-4e77-aeec-9932a49b8335</id>
+        <name>portal.common_attributes</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>共通属性ID</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>afc76016-a451-4301-941b-e653ce70f577</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>commonAttributesId</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>COMM-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>銀行口座</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_2</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>a9f88556-c2a4-4f7b-b017-09cc81893d6b</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>accountBank</name>
+            <updatable>true</updatable>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>CIF番号</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_3</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>f31a1abc-8f44-42c1-b8c5-a7d078aff848</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>cifNo</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>CIF-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>事業種類</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_4</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>126be0aa-9a06-4752-8415-06c3b48d491e</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>businessType</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="selectType">
+                <selectValueMetaDataId>ddb7609f-44d0-4e07-b09f-0c839c273c50</selectValueMetaDataId>
+            </type>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>4</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <version>2</version>
+        </entityStoreDefinition>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <namePropertyId>f31a1abc-8f44-42c1-b8c5-a7d078aff848</namePropertyId>
+        <oidPropertyId>afc76016-a451-4301-941b-e653ce70f577</oidPropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>default</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

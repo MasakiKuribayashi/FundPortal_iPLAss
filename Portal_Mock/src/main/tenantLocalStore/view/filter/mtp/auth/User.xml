@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="0">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityFilter">
+        <displayName>ユーザー情報</displayName>
+        <id>ce31e822-7fa9-47e9-b7e6-8025e66d897f</id>
+        <name>mtp.auth.User</name>
+        <definitionId>E0001</definitionId>
+        <items>
+            <name>テスト</name>
+            <displayName>フィルターテスト</displayName>
+            <condition>rank.level&gt;2</condition>
+        </items>
+    </metaData>
+</metaDataEntry>

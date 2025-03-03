@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Mar 03 13:26:50 JST 2025
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\li4642\\.gradle\\caches\\modules-2\\files-2.1\\org.iplass\\iplass-admin\\4.0.5\\bbd54042585d577ff8bdfb59391e7f1befeb618b\\iplass-admin-4.0.5.jar=WEB-INF/lib/iplass-admin-4.0.5.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\li4642\\.gradle\\caches\\modules-2\\files-2.1\\org.iplass\\iplass-web\\4.0.5\\a009988173145257ddf1eef9491d19a677ce5bf7\\iplass-web-4.0.5.jar=WEB-INF/lib/iplass-web-4.0.5.jar

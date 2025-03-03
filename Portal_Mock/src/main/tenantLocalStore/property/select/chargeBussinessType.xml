@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaSelectValue">
+        <displayName>担当事業</displayName>
+        <id>ed597d7c-b5d7-424e-8c67-186620fd93ea</id>
+        <name>chargeBussinessType</name>
+        <values>
+            <value>国民生活事業</value>
+            <displayName>国民生活事業</displayName>
+        </values>
+        <values>
+            <value>農林水産事業</value>
+            <displayName>農林水産事業</displayName>
+        </values>
+        <values>
+            <value>中小企業事業</value>
+            <displayName>中小企業事業</displayName>
+        </values>
+        <values>
+            <value>企画管理本部</value>
+            <displayName>企画管理本部</displayName>
+        </values>
+    </metaData>
+</metaDataEntry>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="2">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>職員に関する情報を管理する
+将来的には、基幹システムの人事情報と同期させることを検討する</description>
+        <displayName>職員属性</displayName>
+        <id>9b51c4bc-db7a-494b-b659-b8d35e2c4cde</id>
+        <name>portal.staff_attributes</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>職員ID</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>4bf26744-9d08-4b7f-86e0-66ae6b302a94</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>staffId</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>STAF-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>氏名</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_2</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>e79aa3f0-f09d-4914-895e-a952c2fc852e</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>fullName</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>所属部署</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_3</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>49bbaef1-6bcb-4d4d-88f2-e895b0dbeb70</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>department</name>
+            <updatable>true</updatable>
+            <type xsi:type="selectType">
+                <selectValueMetaDataId>0c097d30-aebd-4f77-8b7e-628dcceb843e</selectValueMetaDataId>
+            </type>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>3</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <version>2</version>
+        </entityStoreDefinition>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <namePropertyId>e79aa3f0-f09d-4914-895e-a952c2fc852e</namePropertyId>
+        <oidPropertyId>4bf26744-9d08-4b7f-86e0-66ae6b302a94</oidPropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>default</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

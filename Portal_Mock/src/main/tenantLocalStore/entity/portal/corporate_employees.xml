@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>法人の従業員情報を管理（役職や所属部署など）</description>
+        <displayName>法人従業員</displayName>
+        <id>fe7461af-ea5f-42bd-9e08-8f60699368f7</id>
+        <name>portal.corporate_employees</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>法人従業員ID</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>962739cf-5afe-4df7-a52a-4225f3e09316</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>employeeId</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>EMPL-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>個人属性ID</displayName>
+            <id>4967ede5-25c8-41ce-b4f1-5e48b51e9787</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>personalId</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>ad36185e-a963-4cb5-b1c4-6146946a31bd</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+            <versionControlType>CURRENT_BASE</versionControlType>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>役職</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_2</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>2f1c53af-ef11-4891-9962-afd47e8442a2</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>position</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>所属部署</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_3</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>16e29f4c-c504-4926-92e4-7586b4411ffa</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>department</name>
+            <updatable>false</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>メールアドレス</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_4</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>fa9ee752-c8ad-470f-b222-13bef4b84a62</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>email</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>電話番号</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_5</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>13b0a111-614c-48e2-93b2-a8c53a4fd29c</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>phoneNumber</name>
+            <updatable>true</updatable>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>5</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <version>1</version>
+        </entityStoreDefinition>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <namePropertyId>fa9ee752-c8ad-470f-b222-13bef4b84a62</namePropertyId>
+        <oidPropertyId>962739cf-5afe-4df7-a52a-4225f3e09316</oidPropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>default</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

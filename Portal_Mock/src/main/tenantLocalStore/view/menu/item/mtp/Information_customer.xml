@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityMenu">
+        <description/>
+        <id>5da1b9a9-cc3f-4bf3-89c0-5fc74e1ac256</id>
+        <name>mtp/Information_customer</name>
+        <definitionId>E0007</definitionId>
+        <executeSearch>true</executeSearch>
+        <viewName>customer</viewName>
+    </metaData>
+</metaDataEntry>

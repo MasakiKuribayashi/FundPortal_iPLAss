@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="4">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <displayName>よくある質問</displayName>
+        <id>f4501f67-7f23-476f-bded-008097541f76</id>
+        <name>portal.FAQ</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>よくある質問ID</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>dcdfe35e-a48a-4bce-babe-d4737fc5bbac</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>faqId</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>FAQ-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>質問タイトル</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_2</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>db83f500-093c-4f03-b418-000343a102a3</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>title</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>回答詳細</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_3</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>e352b8a6-584c-4127-89a1-074c43cb7efa</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>answer</name>
+            <updatable>true</updatable>
+            <type xsi:type="longTextType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>有効フラグ</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_4</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>20536fa3-f5b0-4328-8d69-c113c15fe208</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>enableFlg</name>
+            <updatable>true</updatable>
+            <type xsi:type="booleanType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>ソート順</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>NUM_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>b6ba5449-4c2a-4983-a086-45e0a3bea356</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>sort</name>
+            <updatable>true</updatable>
+            <type xsi:type="integerType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>担当事業</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_5</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>dcc461b6-7934-41d4-a010-68f24d161399</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>chargeBussinessType</name>
+            <updatable>true</updatable>
+            <type xsi:type="selectType">
+                <selectValueMetaDataId>ed597d7c-b5d7-424e-8c67-186620fd93ea</selectValueMetaDataId>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>公開終了フラグ</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_6</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>c069e78a-e110-49e6-a431-63aaab870888</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>closeFlg</name>
+            <updatable>true</updatable>
+            <type xsi:type="booleanType"/>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>6</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <maxDecimal>
+                <columnNo>1</columnNo>
+                <pageNo>0</pageNo>
+            </maxDecimal>
+            <version>4</version>
+        </entityStoreDefinition>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <namePropertyId>db83f500-093c-4f03-b418-000343a102a3</namePropertyId>
+        <oidPropertyId>dcdfe35e-a48a-4bce-babe-d4737fc5bbac</oidPropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>default</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

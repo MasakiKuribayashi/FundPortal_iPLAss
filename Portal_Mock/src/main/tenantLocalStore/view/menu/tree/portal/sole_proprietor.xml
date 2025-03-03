@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="0">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaTreeMenu">
+        <description>ユーザータイプが個人事業主の場合のメニュー画面</description>
+        <displayName>会員（個人事業主）用</displayName>
+        <id>e3533cc9-9266-4695-9ecc-d491782481fb</id>
+        <name>portal/sole_proprietor</name>
+        <childs>
+            <menuRefId>VMI0001</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>VMI0007</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>0f70310a-6a3b-4dfa-967e-bc515fa361ae</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>b7c807f2-fbf2-4d9e-8799-97d1c9793eb5</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>5c0e1b40-68dc-49f4-aa20-629fdf14babb</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>6827bceb-d138-432a-b381-3b4f8190e3a5</menuRefId>
+        </childs>
+        <displayOrder>10</displayOrder>
+        <showMenuDisplayName>false</showMenuDisplayName>
+    </metaData>
+</metaDataEntry>

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="2">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>ユーザー定義です。</description>
+        <displayName>ユーザー情報</displayName>
+        <id>E0001</id>
+        <localizedDisplayNameList>
+            <localeName>ja</localeName>
+            <stringValue>ユーザー情報</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>en</localeName>
+            <stringValue>User Information</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>zh-CN</localeName>
+            <stringValue>用户信息</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>zh-TW</localeName>
+            <stringValue>用戶信息</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>th</localeName>
+            <stringValue>ข้อมูลผู้ใช้งาน</stringValue>
+        </localizedDisplayNameList>
+        <name>mtp.auth.User</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>ユーザーID</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+                <externalIndex>false</externalIndex>
+                <indexPageNo>0</indexPageNo>
+                <indexColumnNo>1</indexColumnNo>
+            </entityStoreProperty>
+            <id>2</id>
+            <indexType>UNIQUE</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>ユーザーID</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>User Id</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>用户ID</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>用戶ID</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>ไอดีผู้ใช้งาน</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>accountId</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <validations xsi:type="metaValidationLength">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>Length</messageId>
+                <checkBytes>false</checkBytes>
+                <max>128</max>
+                <min>4</min>
+                <surrogatePairAsOneChar>false</surrogatePairAsOneChar>
+            </validations>
+            <validations xsi:type="metaValidationRegex">
+                <errorMessage>ユーザーIDには「英数字」および「-」(マイナス)「@」「_」「.」(ピリオド)のみ利用可能です。</errorMessage>
+                <localizedErrorMessageList>
+                    <localeName>ja</localeName>
+                    <stringValue>ユーザーIDには「英数字」および「-」(マイナス)「@」「_」「.」(ピリオド)のみ利用可能です。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>en</localeName>
+                    <stringValue>And "alphanumeric" to the user ID is "-"(Minus), "."(period), "@", "_" is only available.</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-CN</localeName>
+                    <stringValue>用户ID中只能使用英文，数字，-，@，_，和.。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-TW</localeName>
+                    <stringValue>用戶ID中只能使用英文，數字，-，@，_，和.。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>th</localeName>
+                    <stringValue>ไอดีผู้ใช้งานสามารถใช้ได้เพียง "ตัวอักษรภาษาอังกฤษ", "-"(Minus), "."(period), "@", "_" เท่านัน้</stringValue>
+                </localizedErrorMessageList>
+                <pattern>[-\w@.]*</pattern>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>氏名</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_3</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>4</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>姓</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Last Name</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>姓</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>姓</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>นามสกุล</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>fullName</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>メールアドレス</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_4</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>5</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>メールアドレス</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Mail Address</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>邮箱</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>郵箱</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>อีเมลแอดเดรส</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>mail</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationRegex">
+                <errorMessage>メールアドレスをご確認ください。</errorMessage>
+                <localizedErrorMessageList>
+                    <localeName>ja</localeName>
+                    <stringValue>メールアドレスをご確認ください。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>en</localeName>
+                    <stringValue>Please check your e-mail address.</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-CN</localeName>
+                    <stringValue>请检查您的邮箱。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-TW</localeName>
+                    <stringValue>請檢查您的郵箱。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>th</localeName>
+                    <stringValue>กรุณาใส่อีเมลแอดเดรส</stringValue>
+                </localizedErrorMessageList>
+                <pattern>|^(?:(?:(?:(?:[a-zA-Z0-9_!#\$\%&amp;'*+/=?\^`{}~|\-]+)(?:\.(?:[a-zA-Z0-9_!#\$\%&amp;'*+/=?\^`{}~|\-]+))*)|(?:"(?:\\[^\r\n]|[^\\"])*")))\@(?:(?:(?:(?:[a-zA-Z0-9_!#\$\%&amp;'*+/=?\^`{}~|\-]+)(?:\.(?:[a-zA-Z0-9_!#\$\%&amp;'*+/=?\^`{}~|\-]+))*)|(?:\[(?:\\\S|[\x21-\x5a\x5e-\x7e])*\])))$</pattern>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>言語</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_5</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>8</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>言語</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Language</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>语言</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>語言</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>ภาษา</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>language</name>
+            <updatable>true</updatable>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>氏名（カナ）</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_7</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>12</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>姓（カナ）</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Last Name (Kana)</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>姓（假名）</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>姓（假名）</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>นามสกุล (คาตาคานะ)</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>fullNameKana</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationRegex">
+                <errorMessage>氏名（カナ）は全角カナで入力してください。</errorMessage>
+                <localizedErrorMessageList>
+                    <localeName>ja</localeName>
+                    <stringValue>姓（カナ）は全角カナで入力してください。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>en</localeName>
+                    <stringValue>(Kana) Please enter last name em in Cana.</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-CN</localeName>
+                    <stringValue>请用全角的日语假名来输入您的姓。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-TW</localeName>
+                    <stringValue>請用全角的日語假名來輸入您的姓。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>th</localeName>
+                    <stringValue>กรุณาใส่นามสกุลด้วยตัวคาตาคานะ</stringValue>
+                </localizedErrorMessageList>
+                <pattern>^[\u30A1-\u30FC\u3000\u0020\\s　]++</pattern>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>管理者</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_8</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>14</id>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>管理者</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Administrator</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>管理员</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>管理員</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>ผู้ดูแล</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>admin</name>
+            <updatable>true</updatable>
+            <type xsi:type="booleanType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>一時ログインユーザー</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_9</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>16</id>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>一時ログインユーザー</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Temporary User</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>临时用户</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>臨時用戶</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>ผู้ใช้งานชั่วคราว</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>temporary</name>
+            <updatable>true</updatable>
+            <type xsi:type="booleanType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>アカウントポリシー</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_10</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>17</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>アカウントポリシー</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Account Policy</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>帐户策略</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>帳戶策略</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>นโยบายความปลอดภัย</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>accountPolicy</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationScripting">
+                <errorMessage>指定のポリシー定義は存在しません。</errorMessage>
+                <localizedErrorMessageList>
+                    <localeName>ja</localeName>
+                    <stringValue>指定のポリシー定義は存在しません。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>en</localeName>
+                    <stringValue>Specified policy does not exist.</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-CN</localeName>
+                    <stringValue>指定的策略不存在。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>zh-TW</localeName>
+                    <stringValue>指定的策略不存在。</stringValue>
+                </localizedErrorMessageList>
+                <localizedErrorMessageList>
+                    <localeName>th</localeName>
+                    <stringValue>นโยบายที่ระบุไม่ปรากฏ</stringValue>
+                </localizedErrorMessageList>
+                <asArray>false</asArray>
+                <script>import org.iplass.mtp.*;
+import org.iplass.mtp.auth.policy.definition.*;
+
+if (value != null) {
+    AuthenticationPolicyDefinition apd = ManagerLocator.instance.getManager(AuthenticationPolicyDefinitionManager.class).get(value);
+    if (apd == null) {
+        return false;
+    }
+}
+return true;</script>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>IPアドレス履歴</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_11</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>18</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>IPアドレス履歴</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>IP Address History</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>IP地址历史</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>IP地址歷史</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>ประวัติ IP Address</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>ipAddressHistory</name>
+            <updatable>true</updatable>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>ユーザータイプ</displayName>
+            <id>REF5</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>所属グループ</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Member Of</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>所属组</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>所屬組</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>สมาชิกของ</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>groups</name>
+            <updatable>true</updatable>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>E0006</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>権限レベル</displayName>
+            <id>REF6</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>所属ランク</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Rank Affiliation</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>所属级别</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>所屬級別</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>อันดับของ</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>rank</name>
+            <updatable>true</updatable>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>E0002</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>個人属性ID</displayName>
+            <id>b92d3384-ede9-451b-95db-c2539f980260</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>personalId</name>
+            <updatable>true</updatable>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>ad36185e-a963-4cb5-b1c4-6146946a31bd</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+            <versionControlType>CURRENT_BASE</versionControlType>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>職員ID</displayName>
+            <id>f741ed35-b2a3-439b-8969-1d00394f338a</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>staffId</name>
+            <updatable>true</updatable>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>9b51c4bc-db7a-494b-b659-b8d35e2c4cde</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+            <versionControlType>CURRENT_BASE</versionControlType>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>11</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <maxUniqueIndexedVarchar>
+                <columnNo>1</columnNo>
+                <pageNo>0</pageNo>
+            </maxUniqueIndexedVarchar>
+            <tableNamePostfix>USER</tableNamePostfix>
+            <version>3</version>
+        </entityStoreDefinition>
+        <eventListenerList xsi:type="metaJavaClassEventListener">
+            <withoutMappedByReference>false</withoutMappedByReference>
+            <className>org.iplass.mtp.impl.auth.UserEntityEventListener</className>
+        </eventListenerList>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <mapping>
+            <mappingClass>org.iplass.mtp.auth.User</mappingClass>
+        </mapping>
+        <namePropertyId>4</namePropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>user</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="0">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaTopView">
+        <description>管理者権限を持つユーザー用</description>
+        <displayName>管理者用</displayName>
+        <id>5bc56b67-2ca3-4dee-9a01-3340fe8b37a1</id>
+        <name>AppAdmin</name>
+        <parts xsi:type="metaLastLoginParts"/>
+        <parts xsi:type="metaInformationParts">
+            <allowRichTextEditorLinkAction>false</allowRichTextEditorLinkAction>
+            <availableHtmlTag>false</availableHtmlTag>
+            <enableDataLocalization>false</enableDataLocalization>
+            <passwordWarningAge>0</passwordWarningAge>
+            <showWarningPasswordAge>false</showWarningPasswordAge>
+            <title>お知らせ（AppAdmin）</title>
+            <useRichtextEditor>false</useRichtextEditor>
+        </parts>
+        <parts xsi:type="metaEntityListParts">
+            <definitionId>E0001</definitionId>
+            <filterName/>
+            <searchAsync>false</searchAsync>
+            <viewName/>
+            <viewNameForDetail/>
+            <viewNameForLink/>
+        </parts>
+    </metaData>
+</metaDataEntry>

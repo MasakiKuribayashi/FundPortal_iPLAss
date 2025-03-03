@@ -1,0 +1,16 @@
+127.0.0.1 - - [26/Feb/2025:19:11:02 +0900] "GET / HTTP/1.1" 404 896
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:19:11:11 +0900] "GET /Portal_Mock/Portal_Fund/gem/ HTTP/1.1" 200 7603
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:23:26 +0900] "POST /Portal_Mock/Portal_Fund/gem/auth/dologin HTTP/1.1" 200 7744
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:23:28 +0900] "GET /Portal_Mock/Portal_Fund/gem/ HTTP/1.1" 200 7603
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:23:30 +0900] "POST /Portal_Mock/Portal_Fund/gem/auth/dologin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:23:36 +0900] "GET /Portal_Mock/Portal_Fund/gem/ HTTP/1.1" 200 26676
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:23:38 +0900] "POST /Portal_Mock/Portal_Fund/api/gem/generic/search/list HTTP/1.1" 200 6270
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:24:58 +0900] "POST /Portal_Mock/Portal_Fund/admin/index HTTP/1.1" 200 5941
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:24:59 +0900] "POST /Portal_Mock/admin/mtpadmin/xsrf HTTP/1.1" 200 104
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:24:59 +0900] "POST /Portal_Mock/admin/mtpadmin/service/tenant HTTP/1.1" 200 600
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:24:59 +0900] "POST /Portal_Mock/admin/mtpadmin/service/screen HTTP/1.1" 200 19
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:25:02 +0900] "POST /Portal_Mock/admin/mtpadmin/service/metaData HTTP/1.1" 200 491
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:25:03 +0900] "POST /Portal_Mock/admin/mtpadmin/service/metaData HTTP/1.1" 200 752
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:25:17 +0900] "POST /Portal_Mock/admin/mtpadmin/service/entityexplorer HTTP/1.1" 200 14
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:25:17 +0900] "POST /Portal_Mock/admin/mtpadmin/service/entityexplorer HTTP/1.1" 200 648
+0:0:0:0:0:0:0:1 - - [26/Feb/2025:20:25:17 +0900] "POST /Portal_Mock/admin/mtpadmin/service/metaexplorer HTTP/1.1" 200 12864

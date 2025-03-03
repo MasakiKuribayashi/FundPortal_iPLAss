@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>個人会員を管理するテーブル
+共通属性IDで共通属性テーブルと紐付ける</description>
+        <displayName>個人属性</displayName>
+        <id>ad36185e-a963-4cb5-b1c4-6146946a31bd</id>
+        <name>portal.personal_attributes</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>個人属性ID</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>f9a6089d-763c-43d3-9104-7c9688bc556f</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>personalId</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>PERS-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>氏名</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_2</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>407ba96a-410a-4203-87fe-6cf481b8555a</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>fullName</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>メールアドレス</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_3</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>8f72721a-c5fb-4400-a354-20db1827eb29</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>email</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>共通属性ID</displayName>
+            <id>72b741fe-16d9-4911-ab0a-5a00bf3ff8ce</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>commonAttributesId</name>
+            <updatable>true</updatable>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>f93f83a9-c81b-4e77-aeec-9932a49b8335</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+            <versionControlType>CURRENT_BASE</versionControlType>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaReferenceProperty">
+            <displayName>事業者属性ID</displayName>
+            <id>484d4f02-c7d8-4b58-8c24-6667a3946c81</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>businessId</name>
+            <updatable>true</updatable>
+            <auditLogMappedBy>false</auditLogMappedBy>
+            <referenceEntityMetaDataId>f0800f83-faba-4ab7-bf78-bebabce5954c</referenceEntityMetaDataId>
+            <referenceType>ASSOCIATION</referenceType>
+            <versionControlType>CURRENT_BASE</versionControlType>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>3</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <version>1</version>
+        </entityStoreDefinition>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <namePropertyId>407ba96a-410a-4203-87fe-6cf481b8555a</namePropertyId>
+        <oidPropertyId>f9a6089d-763c-43d3-9104-7c9688bc556f</oidPropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>default</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>

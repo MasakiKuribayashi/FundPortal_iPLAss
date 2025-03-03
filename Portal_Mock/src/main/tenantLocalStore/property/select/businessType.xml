@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaSelectValue">
+        <description>共通属性の「事業種類」にて選択する値</description>
+        <displayName>事業種類</displayName>
+        <id>ddb7609f-44d0-4e07-b09f-0c839c273c50</id>
+        <name>businessType</name>
+        <values>
+            <value>国民生活事業</value>
+            <displayName>国民生活事業</displayName>
+        </values>
+        <values>
+            <value>農林水産事業</value>
+            <displayName>農林水産事業</displayName>
+        </values>
+        <values>
+            <value>中小企業事業</value>
+            <displayName>中小企業事業</displayName>
+        </values>
+    </metaData>
+</metaDataEntry>

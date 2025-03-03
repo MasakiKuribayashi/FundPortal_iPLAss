@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="0">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityMenu">
+        <id>665a7c17-36bc-4ed0-b74c-e90958d11c22</id>
+        <name>portal/corporate_employees</name>
+        <definitionId>fe7461af-ea5f-42bd-9e08-8f60699368f7</definitionId>
+        <executeSearch>true</executeSearch>
+    </metaData>
+</metaDataEntry>

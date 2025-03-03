@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaSelectValue">
+        <description>職員属性で選択できる所属部署を定義する</description>
+        <displayName>所属部署</displayName>
+        <id>0c097d30-aebd-4f77-8b7e-628dcceb843e</id>
+        <name>department</name>
+        <values>
+            <value>IT統括部</value>
+            <displayName>IT統括部</displayName>
+        </values>
+        <values>
+            <value>審査部</value>
+            <displayName>審査部</displayName>
+        </values>
+    </metaData>
+</metaDataEntry>

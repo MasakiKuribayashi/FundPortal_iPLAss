@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="0">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityMenu">
+        <id>5c0e1b40-68dc-49f4-aa20-629fdf14babb</id>
+        <name>portal/personal_attributes</name>
+        <definitionId>ad36185e-a963-4cb5-b1c4-6146946a31bd</definitionId>
+        <executeSearch>true</executeSearch>
+    </metaData>
+</metaDataEntry>

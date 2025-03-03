@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityMenu">
+        <id>88ae8c2c-ec14-42e4-823c-cb552816d6df</id>
+        <name>portal/File_Giving_Receiving</name>
+        <definitionId>2fb95d2e-547c-4ffe-820b-142e5597dd89</definitionId>
+        <executeSearch>true</executeSearch>
+    </metaData>
+</metaDataEntry>

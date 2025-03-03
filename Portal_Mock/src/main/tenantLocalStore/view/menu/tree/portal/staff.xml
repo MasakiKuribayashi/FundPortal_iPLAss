@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="2">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaTreeMenu">
+        <description>ユーザータイプが職員の場合のメニュー画面</description>
+        <displayName>職員用</displayName>
+        <id>17590e78-b947-491f-a7d6-6414e1f18836</id>
+        <name>portal/staff</name>
+        <childs>
+            <childs>
+                <menuRefId>VMI0003</menuRefId>
+            </childs>
+            <childs>
+                <menuRefId>VMI0008</menuRefId>
+            </childs>
+            <childs>
+                <menuRefId>VMI0010</menuRefId>
+            </childs>
+            <childs>
+                <menuRefId>VMI0009</menuRefId>
+            </childs>
+            <menuRefId>VMIN002</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>VMI0006</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>VMI0002</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>VMI0001</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>VMI0007</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>8a0f1765-829b-4f63-b478-725dbf159895</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>318bd3e9-90ed-4a39-bac4-fdc09f5f3655</menuRefId>
+        </childs>
+        <childs>
+            <menuRefId>90651961-e6c6-4e82-8241-55323a249a75</menuRefId>
+        </childs>
+        <displayOrder>10</displayOrder>
+        <showMenuDisplayName>false</showMenuDisplayName>
+    </metaData>
+</metaDataEntry>

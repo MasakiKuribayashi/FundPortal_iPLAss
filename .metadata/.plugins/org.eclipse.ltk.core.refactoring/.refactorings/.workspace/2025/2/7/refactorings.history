@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="リソース名 &apos;iPLAss_template_MK-master&apos; を &apos;Portal_Mock&apos; に変更します" description="リソース &apos;iPLAss_template_MK-master&apos; の名前変更" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/iPLAss_template_MK-master" name="Portal_Mock" stamp="1739178105642" updateReferences="true"/>
+</session>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityView">
+        <displayName>資料授受</displayName>
+        <id>887afcf8-8080-442d-8335-f5ed29e5fb79</id>
+        <name>portal.File_Giving_Receiving</name>
+        <definitionId>2fb95d2e-547c-4ffe-820b-142e5597dd89</definitionId>
+        <views xsi:type="metaSearchFormView">
+            <name/>
+            <localizationData>false</localizationData>
+            <dialogMaximize>false</dialogMaximize>
+            <sections xsi:type="metaSearchConditionSection">
+                <dispFlag>false</dispFlag>
+                <canCsvUploadTargetVersionSelectForNoneVersionedEntity>false</canCsvUploadTargetVersionSelectForNoneVersionedEntity>
+                <colNum>1</colNum>
+                <conditionDispCount>5</conditionDispCount>
+                <csvMultipleFormat>EACH_COLUMN</csvMultipleFormat>
+                <csvUploadDenyDelete>false</csvUploadDenyDelete>
+                <csvUploadDenyInsert>false</csvUploadDenyInsert>
+                <csvUploadDenyUpdate>false</csvUploadDenyUpdate>
+                <csvUploadTransactionType>ONCE</csvUploadTransactionType>
+                <distinct>false</distinct>
+                <elements xsi:type="metaPropertyItem">
+                    <dispFlag>true</dispFlag>
+                    <propertyId>name</propertyId>
+                    <editor xsi:type="metaStringPropertyEditor">
+                        <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
+                        <allowedContent>false</allowedContent>
+                        <displayType>Text</displayType>
+                        <hideRichtextEditorToolBar>true</hideRichtextEditorToolBar>
+                        <insertWithLabelValue>true</insertWithLabelValue>
+                        <isNullSearchEnabled>false</isNullSearchEnabled>
+                        <maxlength>0</maxlength>
+                        <searchExactMatchCondition>false</searchExactMatchCondition>
+                        <updateWithLabelValue>false</updateWithLabelValue>
+                    </editor>
+                    <hideNormalCondition>false</hideNormalCondition>
+                    <hideDetailCondition>false</hideDetailCondition>
+                    <hideDetail>false</hideDetail>
+                    <hideView>false</hideView>
+                    <isBlank>false</isBlank>
+                    <requiredNormal>false</requiredNormal>
+                    <requiredDetail>false</requiredDetail>
+                </elements>
+                <fulltextSearchSorted>false</fulltextSearchSorted>
+                <hideCsvUpload>false</hideCsvUpload>
+                <hideCsvdownload>false</hideCsvdownload>
+                <hideCsvdownloadDialog>false</hideCsvdownloadDialog>
+                <hideDetailCondition>false</hideDetailCondition>
+                <hideFixedCondition>false</hideFixedCondition>
+                <nonOutputBinaryRef>false</nonOutputBinaryRef>
+                <nonOutputDisplayName>false</nonOutputDisplayName>
+                <nonOutputOid>false</nonOutputOid>
+                <nonOutputReference>false</nonOutputReference>
+                <specifyCharacterCode>NONE</specifyCharacterCode>
+                <unsorted>false</unsorted>
+                <uploadableCsvdownloadLoadAtOnce>false</uploadableCsvdownloadLoadAtOnce>
+                <useDefaultConditionWithFilterDefinition>false</useDefaultConditionWithFilterDefinition>
+            </sections>
+            <sections xsi:type="metaSearchResultSection">
+                <dispFlag>false</dispFlag>
+                <bulkUpdateAllCommandTransactionType>DIVISION</bulkUpdateAllCommandTransactionType>
+                <checkEntityPermissionLimitConditionOfEditLink>false</checkEntityPermissionLimitConditionOfEditLink>
+                <deleteAllCommandTransactionType>DIVISION</deleteAllCommandTransactionType>
+                <dispHeight>0</dispHeight>
+                <elements xsi:type="metaPropertyColumn">
+                    <dispFlag>true</dispFlag>
+                    <propertyId>name</propertyId>
+                    <editor xsi:type="metaStringPropertyEditor">
+                        <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
+                        <allowedContent>false</allowedContent>
+                        <displayType>Text</displayType>
+                        <hideRichtextEditorToolBar>true</hideRichtextEditorToolBar>
+                        <insertWithLabelValue>true</insertWithLabelValue>
+                        <isNullSearchEnabled>false</isNullSearchEnabled>
+                        <maxlength>0</maxlength>
+                        <searchExactMatchCondition>false</searchExactMatchCondition>
+                        <updateWithLabelValue>false</updateWithLabelValue>
+                    </editor>
+                    <width>0</width>
+                    <sortable>true</sortable>
+                    <outputCsv>true</outputCsv>
+                </elements>
+                <elements xsi:type="metaPropertyColumn">
+                    <dispFlag>true</dispFlag>
+                    <propertyId>acdb3c7f-482e-4f4c-8f4a-1b6a21303092</propertyId>
+                    <editor xsi:type="metaBinaryPropertyEditor">
+                        <displayType>Binary</displayType>
+                        <height>0</height>
+                        <hideDeleteButton>false</hideDeleteButton>
+                        <hideSelectButton>false</hideSelectButton>
+                        <insertWithLabelValue>true</insertWithLabelValue>
+                        <openNewTab>false</openNewTab>
+                        <showImageRotateButton>false</showImageRotateButton>
+                        <updateWithLabelValue>false</updateWithLabelValue>
+                        <useImageViewer>true</useImageViewer>
+                        <usePdfjs>false</usePdfjs>
+                        <width>0</width>
+                    </editor>
+                    <width>0</width>
+                    <sortable>true</sortable>
+                    <outputCsv>true</outputCsv>
+                </elements>
+                <exclusiveControlPoint>WHEN_DIALOG_OPEN</exclusiveControlPoint>
+                <forceUpadte>false</forceUpadte>
+                <groupingData>false</groupingData>
+                <hideCount>false</hideCount>
+                <hideDelete>false</hideDelete>
+                <hideDetailLink>false</hideDetailLink>
+                <hidePageJump>false</hidePageJump>
+                <hidePageLink>false</hidePageLink>
+                <hidePaging>false</hidePaging>
+                <purgeCompositionedEntity>false</purgeCompositionedEntity>
+                <showBulkUpdate>false</showBulkUpdate>
+                <useBulkView>false</useBulkView>
+            </sections>
+            <hideTrash>false</hideTrash>
+            <allowTrashOperationToRecycleBy>false</allowTrashOperationToRecycleBy>
+            <hideNew>false</hideNew>
+            <isPurge>false</isPurge>
+            <deleteSpecificVersion>false</deleteSpecificVersion>
+            <canVersionedReferenceSearchForNoneVersionedEntity>false</canVersionedReferenceSearchForNoneVersionedEntity>
+            <showUserNameWithPrivilegedValue>false</showUserNameWithPrivilegedValue>
+            <useInterrupterForCsvDownload>false</useInterrupterForCsvDownload>
+        </views>
+    </metaData>
+</metaDataEntry>

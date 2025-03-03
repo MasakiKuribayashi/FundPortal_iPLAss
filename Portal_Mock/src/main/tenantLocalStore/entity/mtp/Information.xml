@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="9">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntity">
+        <description>ニュースなどのコンテンツ定義です。</description>
+        <displayName>お知らせ情報</displayName>
+        <id>E0007</id>
+        <localizedDisplayNameList>
+            <localeName>ja</localeName>
+            <stringValue>お知らせ情報</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>en</localeName>
+            <stringValue>Information Notice</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>zh-CN</localeName>
+            <stringValue>通知信息</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>zh-TW</localeName>
+            <stringValue>通知信息</stringValue>
+        </localizedDisplayNameList>
+        <localizedDisplayNameList>
+            <localeName>th</localeName>
+            <stringValue>ประกาศ</stringValue>
+        </localizedDisplayNameList>
+        <name>mtp.Information</name>
+        <crawl>false</crawl>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>お知らせ番号</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_3</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>d1186a30-01c5-40ff-806c-dfef3096b81b</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>infoNo</name>
+            <updatable>false</updatable>
+            <type xsi:type="autoNumberType">
+                <fixedNumberOfDigits>6</fixedNumberOfDigits>
+                <formatScript>INFO-${nextVal()}</formatScript>
+                <numberingType>ALLOW_SKIPPING</numberingType>
+                <startsWith>1</startsWith>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>概要</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_2</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>b5b4fa9d-4182-499c-86b9-962ec3311772</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>title</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="stringType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>お知らせ内容</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>3</id>
+            <indexType>NON_INDEXED</indexType>
+            <localizedDisplayNameList>
+                <localeName>ja</localeName>
+                <stringValue>お知らせ内容</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>en</localeName>
+                <stringValue>Contents Of Announcement</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-CN</localeName>
+                <stringValue>通知内容</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>zh-TW</localeName>
+                <stringValue>通知內容</stringValue>
+            </localizedDisplayNameList>
+            <localizedDisplayNameList>
+                <localeName>th</localeName>
+                <stringValue>เนื้อหาที่ประกาศ</stringValue>
+            </localizedDisplayNameList>
+            <multiplicity>1</multiplicity>
+            <name>content</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="longTextType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>お知らせ種別</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_4</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>408a61c1-b2a0-4021-8543-d5f5fd074121</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>noticeType</name>
+            <updatable>true</updatable>
+            <type xsi:type="selectType">
+                <values>
+                    <value>業務系通知</value>
+                    <displayName>業務系通知</displayName>
+                </values>
+                <values>
+                    <value>システム系通知</value>
+                    <displayName>システム系通知</displayName>
+                </values>
+                <values>
+                    <value>パスワード変更通知</value>
+                    <displayName>パスワード変更通知</displayName>
+                </values>
+                <values>
+                    <value>専用パスワード変更通知</value>
+                    <displayName>専用パスワード変更通知</displayName>
+                </values>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>有効フラグ</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_5</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>df07feee-9454-456f-92e8-8fd62177ff66</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>enableFlag</name>
+            <updatable>true</updatable>
+            <type xsi:type="booleanType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>対象事業</displayName>
+            <entityStoreProperty xsi:type="metaGRdbMultiplePropertyStore">
+                <store>
+                    <pageNo>0</pageNo>
+                    <columnName>STR_6</columnName>
+                    <isNative>false</isNative>
+                </store>
+                <store>
+                    <pageNo>0</pageNo>
+                    <columnName>STR_11</columnName>
+                    <isNative>false</isNative>
+                </store>
+                <store>
+                    <pageNo>0</pageNo>
+                    <columnName>STR_12</columnName>
+                    <isNative>false</isNative>
+                </store>
+            </entityStoreProperty>
+            <id>37e1fd12-618b-4f1d-8b80-a9e3baf8225d</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>3</multiplicity>
+            <name>bussinessType</name>
+            <updatable>true</updatable>
+            <type xsi:type="selectType">
+                <selectValueMetaDataId>ddb7609f-44d0-4e07-b09f-0c839c273c50</selectValueMetaDataId>
+            </type>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>メモ</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_7</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>df5dbecd-3c65-44d9-b2d6-055bef148923</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>memo</name>
+            <updatable>true</updatable>
+            <type xsi:type="longTextType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>ソート順</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>NUM_1</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>f9a2f1ba-6b7e-4afb-9959-cc9ddbcef8f7</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>sort</name>
+            <updatable>true</updatable>
+            <type xsi:type="integerType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>ログイン後トップ画面表示</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_8</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>9cad9549-33ad-4802-9582-dd4d271626a3</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>topFlag</name>
+            <updatable>true</updatable>
+            <type xsi:type="booleanType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>ログイン画面表示</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_9</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>7eb3f00f-63e3-49cd-821d-166a9ac9d09b</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>loginFlag</name>
+            <updatable>true</updatable>
+            <type xsi:type="booleanType"/>
+        </declaredPropertyList>
+        <declaredPropertyList xsi:type="metaPrimitiveProperty">
+            <displayName>担当事業</displayName>
+            <entityStoreProperty xsi:type="metaGRdbPropertyStore">
+                <pageNo>0</pageNo>
+                <columnName>STR_10</columnName>
+                <isNative>false</isNative>
+            </entityStoreProperty>
+            <id>9fabebbe-d56c-4653-b9d7-90b0d6bff13a</id>
+            <indexType>NON_INDEXED</indexType>
+            <multiplicity>1</multiplicity>
+            <name>chargeBussinessType</name>
+            <updatable>true</updatable>
+            <validations xsi:type="metaValidationNotNull">
+                <messageCategory>mtp/validation</messageCategory>
+                <messageId>NotNull</messageId>
+            </validations>
+            <type xsi:type="selectType">
+                <selectValueMetaDataId>ed597d7c-b5d7-424e-8c67-186620fd93ea</selectValueMetaDataId>
+            </type>
+        </declaredPropertyList>
+        <entityStoreDefinition xsi:type="metaGRdbEntityStore">
+            <maxVarchar>
+                <columnNo>12</columnNo>
+                <pageNo>0</pageNo>
+            </maxVarchar>
+            <maxDecimal>
+                <columnNo>1</columnNo>
+                <pageNo>0</pageNo>
+            </maxDecimal>
+            <tableNamePostfix>MTP</tableNamePostfix>
+            <version>10</version>
+        </entityStoreDefinition>
+        <eventListenerList xsi:type="metaJavaClassEventListener">
+            <withoutMappedByReference>false</withoutMappedByReference>
+            <className>org.iplass.mtp.impl.information.InformationEntityEventListener</className>
+        </eventListenerList>
+        <inheritedEntityMetaDataId>/entity/Entity</inheritedEntityMetaDataId>
+        <namePropertyId>b5b4fa9d-4182-499c-86b9-962ec3311772</namePropertyId>
+        <oidPropertyId>d1186a30-01c5-40ff-806c-dfef3096b81b</oidPropertyId>
+        <queryCache>false</queryCache>
+        <storeMapping xsi:type="metaSchemalessRdbStoreMapping">
+            <storageSpace>mtp</storageSpace>
+        </storeMapping>
+        <versionControlType>NONE</versionControlType>
+    </metaData>
+</metaDataEntry>
