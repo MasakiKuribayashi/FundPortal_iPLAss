@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE metaDataEntry>
-<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="2">
     <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityView">
         <displayName>資料授受</displayName>
         <id>887afcf8-8080-442d-8335-f5ed29e5fb79</id>
-        <name>portal.File_Giving_Receiving</name>
+        <name>portal.file_Giving_Receiving</name>
         <definitionId>2fb95d2e-547c-4ffe-820b-142e5597dd89</definitionId>
         <views xsi:type="metaSearchFormView">
             <name/>

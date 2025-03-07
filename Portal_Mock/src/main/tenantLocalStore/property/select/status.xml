@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaSelectValue">
+        <description>共通属性Entityのステータス項目で使用</description>
+        <displayName>ステータス</displayName>
+        <id>b2964159-cba3-4005-9b79-f5834b2f17d2</id>
+        <name>status</name>
+        <values>
+            <value>非会員</value>
+            <displayName>非会員</displayName>
+        </values>
+        <values>
+            <value>仮登録</value>
+            <displayName>仮登録</displayName>
+        </values>
+        <values>
+            <value>会員</value>
+            <displayName>会員</displayName>
+        </values>
+        <values>
+            <value>専用サービス会員</value>
+            <displayName>専用サービス会員</displayName>
+        </values>
+    </metaData>
+</metaDataEntry>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE metaDataEntry>
-<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="2">
     <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaEntityView">
         <displayName>法人従業員</displayName>
         <id>489a93d7-fb48-44a0-ad74-a7c0e5ac1673</id>
@@ -150,28 +150,6 @@
                     <requiredNormal>false</requiredNormal>
                     <requiredDetail>false</requiredDetail>
                 </elements>
-                <elements xsi:type="metaPropertyItem">
-                    <dispFlag>true</dispFlag>
-                    <propertyId>13b0a111-614c-48e2-93b2-a8c53a4fd29c</propertyId>
-                    <editor xsi:type="metaStringPropertyEditor">
-                        <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
-                        <allowedContent>false</allowedContent>
-                        <displayType>Text</displayType>
-                        <hideRichtextEditorToolBar>true</hideRichtextEditorToolBar>
-                        <insertWithLabelValue>true</insertWithLabelValue>
-                        <isNullSearchEnabled>false</isNullSearchEnabled>
-                        <maxlength>0</maxlength>
-                        <searchExactMatchCondition>false</searchExactMatchCondition>
-                        <updateWithLabelValue>false</updateWithLabelValue>
-                    </editor>
-                    <hideNormalCondition>false</hideNormalCondition>
-                    <hideDetailCondition>false</hideDetailCondition>
-                    <hideDetail>false</hideDetail>
-                    <hideView>false</hideView>
-                    <isBlank>false</isBlank>
-                    <requiredNormal>false</requiredNormal>
-                    <requiredDetail>false</requiredDetail>
-                </elements>
                 <expandable>true</expandable>
                 <hideDetail>false</hideDetail>
                 <hideView>false</hideView>
@@ -233,13 +211,11 @@
                     <propertyId>4967ede5-25c8-41ce-b4f1-5e48b51e9787</propertyId>
                     <editor xsi:type="metaReferencePropertyEditor">
                         <displayType>Link</displayType>
-                        <editPage>Detail</editPage>
-                        <editableReference>true</editableReference>
+                        <editableReference>false</editableReference>
                         <forceUpadte>false</forceUpadte>
                         <hideDeleteButton>false</hideDeleteButton>
                         <hideRegistButton>false</hideRegistButton>
                         <hideSelectButton>false</hideSelectButton>
-                        <insertType>Top</insertType>
                         <insertWithLabelValue>true</insertWithLabelValue>
                         <isNullSearchEnabled>false</isNullSearchEnabled>
                         <itemDirectionColumn>false</itemDirectionColumn>
@@ -247,10 +223,8 @@
                         <permitConditionSelectAll>true</permitConditionSelectAll>
                         <permitVersionedSelect>false</permitVersionedSelect>
                         <referenceFromObjectId>fe7461af-ea5f-42bd-9e08-8f60699368f7</referenceFromObjectId>
-                        <searchType>NONE</searchType>
                         <showRefComboParent>false</showRefComboParent>
                         <singleSelect>false</singleSelect>
-                        <sortType>ASC</sortType>
                         <updateWithLabelValue>false</updateWithLabelValue>
                         <useNestConditionWithProperty>false</useNestConditionWithProperty>
                         <useSearchDialog>false</useSearchDialog>
@@ -310,28 +284,6 @@
                 <elements xsi:type="metaPropertyItem">
                     <dispFlag>true</dispFlag>
                     <propertyId>fa9ee752-c8ad-470f-b222-13bef4b84a62</propertyId>
-                    <editor xsi:type="metaStringPropertyEditor">
-                        <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
-                        <allowedContent>false</allowedContent>
-                        <displayType>Text</displayType>
-                        <hideRichtextEditorToolBar>true</hideRichtextEditorToolBar>
-                        <insertWithLabelValue>true</insertWithLabelValue>
-                        <isNullSearchEnabled>false</isNullSearchEnabled>
-                        <maxlength>0</maxlength>
-                        <searchExactMatchCondition>false</searchExactMatchCondition>
-                        <updateWithLabelValue>false</updateWithLabelValue>
-                    </editor>
-                    <hideNormalCondition>false</hideNormalCondition>
-                    <hideDetailCondition>false</hideDetailCondition>
-                    <hideDetail>false</hideDetail>
-                    <hideView>false</hideView>
-                    <isBlank>false</isBlank>
-                    <requiredNormal>false</requiredNormal>
-                    <requiredDetail>false</requiredDetail>
-                </elements>
-                <elements xsi:type="metaPropertyItem">
-                    <dispFlag>true</dispFlag>
-                    <propertyId>13b0a111-614c-48e2-93b2-a8c53a4fd29c</propertyId>
                     <editor xsi:type="metaStringPropertyEditor">
                         <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
                         <allowedContent>false</allowedContent>
@@ -500,28 +452,6 @@
                     <requiredNormal>false</requiredNormal>
                     <requiredDetail>false</requiredDetail>
                 </elements>
-                <elements xsi:type="metaPropertyItem">
-                    <dispFlag>true</dispFlag>
-                    <propertyId>13b0a111-614c-48e2-93b2-a8c53a4fd29c</propertyId>
-                    <editor xsi:type="metaStringPropertyEditor">
-                        <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
-                        <allowedContent>false</allowedContent>
-                        <displayType>Text</displayType>
-                        <hideRichtextEditorToolBar>true</hideRichtextEditorToolBar>
-                        <insertWithLabelValue>true</insertWithLabelValue>
-                        <isNullSearchEnabled>false</isNullSearchEnabled>
-                        <maxlength>0</maxlength>
-                        <searchExactMatchCondition>false</searchExactMatchCondition>
-                        <updateWithLabelValue>false</updateWithLabelValue>
-                    </editor>
-                    <hideNormalCondition>false</hideNormalCondition>
-                    <hideDetailCondition>false</hideDetailCondition>
-                    <hideDetail>false</hideDetail>
-                    <hideView>false</hideView>
-                    <isBlank>false</isBlank>
-                    <requiredNormal>false</requiredNormal>
-                    <requiredDetail>false</requiredDetail>
-                </elements>
                 <fulltextSearchSorted>false</fulltextSearchSorted>
                 <hideCsvUpload>false</hideCsvUpload>
                 <hideCsvdownload>false</hideCsvdownload>
@@ -622,24 +552,6 @@
                 <elements xsi:type="metaPropertyColumn">
                     <dispFlag>true</dispFlag>
                     <propertyId>fa9ee752-c8ad-470f-b222-13bef4b84a62</propertyId>
-                    <editor xsi:type="metaStringPropertyEditor">
-                        <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
-                        <allowedContent>false</allowedContent>
-                        <displayType>Text</displayType>
-                        <hideRichtextEditorToolBar>true</hideRichtextEditorToolBar>
-                        <insertWithLabelValue>true</insertWithLabelValue>
-                        <isNullSearchEnabled>false</isNullSearchEnabled>
-                        <maxlength>0</maxlength>
-                        <searchExactMatchCondition>false</searchExactMatchCondition>
-                        <updateWithLabelValue>false</updateWithLabelValue>
-                    </editor>
-                    <width>0</width>
-                    <sortable>true</sortable>
-                    <outputCsv>true</outputCsv>
-                </elements>
-                <elements xsi:type="metaPropertyColumn">
-                    <dispFlag>true</dispFlag>
-                    <propertyId>13b0a111-614c-48e2-93b2-a8c53a4fd29c</propertyId>
                     <editor xsi:type="metaStringPropertyEditor">
                         <allowRichTextEditorLinkAction>true</allowRichTextEditorLinkAction>
                         <allowedContent>false</allowedContent>

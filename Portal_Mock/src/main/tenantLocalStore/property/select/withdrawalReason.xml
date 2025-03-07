@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE metaDataEntry>
+<metaDataEntry xmlns:array="http://jaxb.dev.java.net/array" xmlns:def="http://mtp.iplass.org/xml/definition" xmlns:def-vgeneric="http://mtp.iplass.org/xml/definition/view/generic" xmlns:webapi="http://mtp.iplass.org/xml/webapi" version="1">
+    <metaData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="metaSelectValue">
+        <displayName>退会理由</displayName>
+        <id>824b344a-b195-4e4f-aa1e-b661c8802368</id>
+        <name>withdrawalReason</name>
+        <values>
+            <value>取引がなくなった</value>
+            <displayName>取引がなくなった</displayName>
+        </values>
+        <values>
+            <value>サービスを利用しなくなった</value>
+            <displayName>サービスを利用しなくなった</displayName>
+        </values>
+        <values>
+            <value>提供されるサービスが少なかった</value>
+            <displayName>提供されるサービスが少なかった</displayName>
+        </values>
+        <values>
+            <value>有意義な情報が乏しかった</value>
+            <displayName>有意義な情報が乏しかった</displayName>
+        </values>
+        <values>
+            <value>支店職員に直接応対してもらった</value>
+            <displayName>支店職員に直接応対してもらった</displayName>
+        </values>
+        <values>
+            <value>サイトが使いづらかった</value>
+            <displayName>サイトが使いづらかった</displayName>
+        </values>
+        <values>
+            <value>利用方法が分からなかった</value>
+            <displayName>利用方法が分からなかった</displayName>
+        </values>
+        <values>
+            <value>重複して会員登録してしまった</value>
+            <displayName>重複して会員登録してしまった</displayName>
+        </values>
+        <values>
+            <value>その他</value>
+            <displayName>その他</displayName>
+        </values>
+    </metaData>
+</metaDataEntry>
